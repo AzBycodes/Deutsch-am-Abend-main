@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate — Deutsch am Abend</title>
+    <meta
+      name="description"
+      content="Support Deutsch am Abend, a non-profit German language community. Make a one-time or monthly donation, or give by bank transfer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <div class="np-banner">
+      <div class="container">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M12 21s-8-4.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.5-8 11-8 11z"
+          />
+        </svg>
+        <span
+          ><strong>Non-profit:</strong> We reinvest in our mission — help us
+          grow through donations.</span
+        >
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">DAA</span>
+          <span class="brand-name"
+            >Deutsch am Abend<small>German Language Community</small></span
+          >
+        </a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </button>
+        <nav class="main-nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Courses & Prices</a>
+          <a href="registration.html">Register</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section-cream" style="padding: 56px 0 70px">
+        <div class="container">
+          <div class="donate-grid">
+            <!-- LEFT COLUMN -->
+            <div>
+              <span class="eyebrow">Your Impact</span>
+              <h1 style="font-size: clamp(1.9rem, 4vw, 2.6rem)">
+                Where your donation goes
+              </h1>
+              <p
+                style="
+                  color: var(--slate);
+                  font-size: 1.02rem;
+                  max-width: 540px;
+                "
+              >
+                As a non-profit, every peso is reinvested in our community — no
+                salaries beyond our teachers, no shareholders, just learners.
+              </p>
+
+              <div class="impact-list">
+                <div class="impact-item">
+                  <span class="impact-icon">📚</span>
+                  <div>
+                    <h3>Course Materials &amp; Resources</h3>
+                    <p>
+                      Workbooks, printed handouts, online tools, and audio
+                      resources for every level.
+                    </p>
+                  </div>
+                </div>
+                <div class="impact-item">
+                  <span class="impact-icon">🎓</span>
+                  <div>
+                    <h3>Scholarships &amp; Fee Waivers</h3>
+                    <p>
+                      Helping learners who cannot afford course fees to
+                      participate fully in our community.
+                    </p>
+                  </div>
+                </div>
+                <div class="impact-item">
+                  <span class="impact-icon">🏠</span>
+                  <div>
+                    <h3>Venue &amp; Running Costs</h3>
+                    <p>
+                      Room hire, printing, website, and administrative costs to
+                      keep us running.
+                    </p>
+                  </div>
+                </div>
+                <div class="impact-item">
+                  <span class="impact-icon">🌱</span>
+                  <div>
+                    <h3>Growing the Community</h3>
+                    <p>
+                      Reaching new learners, training volunteer teachers, and
+                      hosting community events.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-box">
+                <span class="quote-mark">&ldquo;&rdquo;</span>
+                <p>
+                  Thanks to a donation-funded place, I could complete my B1
+                  course and finally get my residence permit. This community
+                  changed my life.
+                </p>
+                <cite>— A learner from our community</cite>
+              </div>
+
+              <div class="bank-box">
+                <h3>🏦 Bank Transfer</h3>
+                <p>
+                  Prefer to donate by bank transfer? Use the details below.
+                  Please use your name as the payment reference.
+                </p>
+
+                <div class="bank-row">
+                  <span class="bank-label">Account Name</span>
+                  <span class="bank-value" id="bank-name"
+                    >Deutsch am Abend e.V.</span
+                  >
+                  <button class="copy-btn" data-copy-target="bank-name">
+                    Copy
+                  </button>
+                </div>
+                <div class="bank-row">
+                  <span class="bank-label">Account Number</span>
+                  <span class="bank-value" id="bank-acct"
+                    >[ACCOUNT NUMBER]</span
+                  >
+                  <button class="copy-btn" data-copy-target="bank-acct">
+                    Copy
+                  </button>
+                </div>
+                <div class="bank-row">
+                  <span class="bank-label">Bank Name</span>
+                  <span class="bank-value" id="bank-bankname">[BANK NAME]</span>
+                  <button class="copy-btn" data-copy-target="bank-bankname">
+                    Copy
+                  </button>
+                </div>
+                <div class="bank-row">
+                  <span class="bank-label">Reference</span>
+                  <span class="bank-value">Your Name + "Donation"</span>
+                </div>
+
+                <div class="bank-admin-note">
+                  ⚠ Please replace the placeholder account number and bank name
+                  above with your actual banking details before publishing.
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN: DONATION WIDGET -->
+            <div>
+              <div class="donate-widget">
+                <h2>Make a Donation</h2>
+                <p>
+                  Choose an amount and send us a message. We'll follow up with
+                  payment details.
+                </p>
+
+                <div
+                  class="freq-toggle"
+                  role="group"
+                  aria-label="Donation frequency"
+                >
+                  <button type="button" class="active" data-freq="one-time">
+                    One-time
+                  </button>
+                  <button type="button" data-freq="monthly">Monthly</button>
+                </div>
+
+                <label class="field-label">Select amount</label>
+                <div class="amount-grid">
+                  <button type="button" class="amount-btn" data-amount="500">
+                    ₱500
+                  </button>
+                  <button
+                    type="button"
+                    class="amount-btn active"
+                    data-amount="1000"
+                  >
+                    ₱1,000
+                  </button>
+                  <button type="button" class="amount-btn" data-amount="2500">
+                    ₱2,500
+                  </button>
+                  <button type="button" class="amount-btn" data-amount="5000">
+                    ₱5,000
+                  </button>
+                </div>
+
+                <div class="amount-slider-row">
+                  <span class="currency-prefix">₱</span>
+                  <input
+                    type="range"
+                    id="amount-slider"
+                    min="100"
+                    max="10000"
+                    step="100"
+                    value="1000"
+                    aria-label="Donation amount"
+                  />
+                </div>
+
+                <div class="donate-total">
+                  <span class="total-label" id="total-label"
+                    >One-time donation</span
+                  >
+                  <span class="total-amount" id="total-amount">₱1,000</span>
+                </div>
+
+                <form id="donation-form" novalidate>
+                  <div class="field">
+                    <label for="donor-name"
+                      >Your Name <span class="required-mark">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="donor-name"
+                      name="donor_name"
+                      placeholder="Full name"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="donor-email"
+                      >Email Address <span class="required-mark">*</span></label
+                    >
+                    <input
+                      type="email"
+                      id="donor-email"
+                      name="donor_email"
+                      placeholder="your@email.com"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="donor-message">Message (optional)</label>
+                    <textarea
+                      id="donor-message"
+                      name="donor_message"
+                      placeholder="Any notes, dedication, or questions"
+                    ></textarea>
+                  </div>
+
+                  <label class="receipt-check">
+                    <input
+                      type="checkbox"
+                      id="donor-receipt"
+                      name="donor_receipt"
+                    />
+                    <span>I'd like a donation receipt for tax purposes</span>
+                  </label>
+
+                  <input
+                    type="hidden"
+                    id="donation-amount-field"
+                    name="donation_amount"
+                    value="1000"
+                  />
+                  <input
+                    type="hidden"
+                    id="donation-freq-field"
+                    name="donation_frequency"
+                    value="One-time"
+                  />
+
+                  <button type="submit" class="btn btn-primary">
+                    Send Donation Enquiry
+                  </button>
+                  <p class="alt-contact">
+                    Or email us directly:
+                    <a href="mailto:info.deutschamabend@gmail.com"
+                      >info.deutschamabend@gmail.com</a
+                    >
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-paper">
+        <div class="container">
+          <div class="cta-band">
+            <h2>Questions about donating?</h2>
+            <p>
+              Reach out anytime — we're happy to talk through other ways to
+              support our mission.
+            </p>
+            <a
+              href="mailto:info.deutschamabend@gmail.com?subject=Donation%20Inquiry"
+              class="btn btn-primary"
+              >Email us</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="brand-name" style="color: #fff">Deutsch am Abend</span>
+            <p>Non-profit German Language Community, Philippines.</p>
+          </div>
+          <div>
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Courses & Prices</a></li>
+              <li><a href="registration.html">Register</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="donate.html">Donate</a></li>
+              <li><a href="data-privacy.html">Data Privacy</a></li>
+              <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Deutsch am Abend.</span>
+          <span>Non-profit organisation</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/donation-mailto.js"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
